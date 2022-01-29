@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16sp"
+        android:paddingHorizontal="16sp"
+        tools:context=".Registration">
+
+        <ImageButton
+            android:id="@+id/reg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_vector"
+            android:layout_marginLeft="4sp"
+            app:layout_constraintTop_toTopOf="@id/reg"
+            app:layout_constraintBottom_toBottomOf="@id/reg"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/reg_back"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/reg_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            app:layout_constraintTop_toBottomOf="@+id/reg"
+            android:layout_marginTop="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя или никнейм"
+            android:layout_marginTop="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_marginTop="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/reg_pass_rep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:layout_marginTop="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_pass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/reg_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пол"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/reg_pass_rep"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <RadioGroup
+            android:id="@+id/reg_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/reg_gen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='Мужской'/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='Женский'/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='Другое'/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегестрироваться"
+            android:layout_marginTop="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_radio"/>
+
+        <TextView
+            android:id="@+id/reg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение"
+            android:layout_marginTop="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_button"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

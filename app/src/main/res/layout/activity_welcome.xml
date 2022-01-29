@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80sp"
+    android:paddingHorizontal="16sp"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/welcome_bicycles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bicycles"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пожалуй, лучший фитнес трекер в ДВФУ"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:paddingHorizontal="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_bicycles"/>
+
+    <TextView
+        android:id="@+id/welcome_secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Созданый студентами 2-ого курса"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16sp"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_main"/>
+
+    <Button
+        android:id="@+id/welcome_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зарегестрироваться"
+        android:layout_marginTop="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_secondary"/>
+
+    <Button
+        android:id="@+id/welcome_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт?"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_reg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
