@@ -11,9 +11,11 @@
     <string name="app_password_repeat_field">Повторите пароль</string>
     <string name="app_nickname_field">Имя или никнейм</string>
     <string name="app_sex_field">Пол</string>
-    <string name="app_continue_button">Вход</string>
-    <string name="app_register_button">Зарегестрироваться</string>
-    <string name="app_terms_agreement">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и обработки персональных данных, а также принимаете <a href="#">пользовательское соглашение</a></string>
+    <string name="app_continue_button">Продолжить</string>
+    <string name="app_termes_agreement">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и обработки персональных данных, а также принимаете <a href="#">пользовательское соглашение</a></string>
 
     <string name="app_login_title">Вход</string>
+
+    <string name="menu_activity_tracker">Активность</string>
+    <string name="menu_profile">Профиль</string>
 </resources>
